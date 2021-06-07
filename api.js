@@ -79,7 +79,7 @@ class BlueriiotAPI {
         }
     }
 
-    async getData(pathParams, pathTemplate) {
+    getData = async(pathParams, pathTemplate) => {}
         var cred = this.token.credentials;
         // Check if expired and refresh if needed
 
