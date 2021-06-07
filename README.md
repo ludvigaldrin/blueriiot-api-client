@@ -4,25 +4,18 @@ This is an unofficial node js wrapper for the Blueriiot API
 ## Usage
 Example to fetch all pools
 
-`const {BlueriiotAPI} = require('./api');
-
+`
+const {BlueriiotAPI} = require('./api');
 var api = new BlueriiotAPI("email","password");
-
 api.init().then(function(){
-
     console.log(api.isAuthenticated());
-
     api.getSwimmingPools().then(function(data){
-
         console.log(data);
-
     });
-
 }).catch( function(error){
-
     console.log("We have issues signing in: " + error);
-
-});`
+});
+`
 
 
 ## Test
