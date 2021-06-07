@@ -46,7 +46,6 @@ class BlueriiotAPI {
             var blueCred = new BlueCredentials(cred.access_key, cred.secret_key, cred.session_token, cred.expiration)
             this.token = new BlueToken(data.identity_id, data.token, blueCred);
 
-            //console.log(this.token);
         } catch (result) {
             this.token = '';
             throw new Error(result.response.data.errorMessage);
@@ -56,6 +55,11 @@ class BlueriiotAPI {
     getData = async(pathParams, pathTemplate, queryParams) => {
         var cred = this.token.credentials;
         // Check if expired and refresh if needed
+        var now = new Date();
+        var expire = Date.parse(this.token.credentials.expiration);
+        if (expire > now){
+            await this.getToken();
+        }
 
         const apigClient = apigClientFactory.newClient({
             invokeUrl: BASE_URL,

@@ -14,4 +14,3 @@ api.init().then(function(){
 }).catch( function(error){
     console.log("We have issues signing in: " + error);
 });
-
