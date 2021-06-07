@@ -1,6 +1,6 @@
 {
   "name": "blueriiot-api-client",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An unonffical api wrapper for Blueriiot API",
   "main": "api.js",
   "scripts": {
@@ -8,6 +8,10 @@
   },
   "author": "Ludvig Aldrin <ludvig.aldrin@gmail.com>",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ludvigaldrin/blueriiot-api-client"
+  },
   "dependencies": {
     "aws-api-gateway-client": "^0.3.7",
     "dotenv": "^10.0.0"
