@@ -1,0 +1,49 @@
+{
+    "data": [
+      {
+        "created": "2021-04-19T10:29:34.111Z",
+        "blue_device": {
+          "contract_servicePlan": "plus",
+          "sleep_state": "awake",
+          "fw_version_psoc": "v2.2.3",
+          "last_measure_message_gateway_seq_number": 230,
+          "hw_bundle_extender": false,
+          "gateway_id": "",
+          "contract_isGo": false,
+          "last_measure_message_gateway": "2021-06-07T09:35:00.000Z",
+          "hw_region": "eu",
+          "contract_isBasic": false,
+          "sf_rc": "rc1",
+          "wake_period": 4320,
+          "SN": "",
+          "last_measure_message_ble": "2021-05-16T11:47:23.638Z",
+          "sf_rc_country": "SE",
+          "hw_type": "plus",
+          "fw_version_history": [
+            {
+              "timestamp": "2021-04-19T10:30:00.773Z",
+              "fw_version_psoc": "v2.2.3"
+            }
+          ],
+          "fs_beacon_enabled": true,
+          "contract_isSwaUs": false,
+          "hw_generation": 2,
+          "hw_color": "blue",
+          "last_measure_message": "2021-06-07T09:35:00.000Z",
+          "production_datetime": "2020-12-05T00:00:00.000Z",
+          "serial": "",
+          "fs_sigfox_enabled": true,
+          "contract_isVpcEligible": true,
+          "location": {
+            "support": "fit50",
+            "location": "pipe"
+          },
+          "battery_low": false
+        },
+        "user_id": "",
+        "blue_device_serial": "",
+        "role": "IS_OWNER",
+        "swimming_pool_id": ""
+      }
+    ]
+  }

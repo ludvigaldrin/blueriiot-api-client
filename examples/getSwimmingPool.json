@@ -1,0 +1,205 @@
+{
+    "updated": "2021-06-05T10:25:10.495Z",
+    "strip_brand_id": "generic_strips",
+    "swimming_pool_id": "",
+    "created": "2021-04-07T05:39:34.255Z",
+    "custom_settings": {
+      "measure_ranges": {
+        "temperature": {
+          "min": 20,
+          "ideal": 27,
+          "max": 40,
+          "custom_applied": false
+        },
+        "ph": {
+          "min": 7.2,
+          "ideal": 7.3,
+          "max": 7.6,
+          "custom_applied": true
+        },
+        "orp": {
+          "min": 650,
+          "ideal": 700,
+          "max": 750,
+          "custom_applied": true
+        }
+      }
+    },
+    "sigfox_global_coverage": {
+      "robustness": 0,
+      "score": 0,
+      "margins": [
+        -1,
+        -1,
+        -1
+      ],
+      "redundancy": 0,
+      "level": 0
+    },
+    "characteristics": {
+      "volume": {
+        "length": 4.82,
+        "width": 2.67,
+        "depth": 1.35,
+        "capacity": 17.373690000000003
+      },
+      "configuration": {
+        "_type": "Buried",
+        "construction_year": "",
+        "location": "Outdoor",
+        "waterproofing": "Coating_Mosaic",
+        "kind": "SwimmingPool"
+      },
+      "sanitizer": {
+        "chemical": "Chlorine",
+        "process": "Manuel"
+      },
+      "geoloc": {
+        "country_code": "SE",
+        "country": "Sweden",
+        "city": "",
+        "administrative_area_level_1": {
+          "long_name": "",
+          "short_name": ""
+        },
+        "lon": 0,
+        "lat": 0,
+        "zip_code": ""
+      },
+      "equipment": {
+        "heatings": [
+          "Heat Pump"
+        ],
+        "protections": [
+          "BubbleBlanket"
+        ],
+        "cleanings": [
+          "Electric"
+        ],
+        "filtrations": [
+          "Sand"
+        ]
+      },
+      "ph_regulation": {
+        "process": "Manual"
+      },
+      "filter_pump": {
+        "is_present": true,
+        "operating_type": "Manual",
+        "timezone": "Europe/Stockholm",
+        "operating_hours": []
+      }
+    },
+    "name": "Poolen",
+    "chemistry": {
+      "activeChemicalPackId": "riiot_generic",
+      "canSelectChemicalPack": false
+    },
+    "last_refresh_status": "2021-06-07T00:50:30.737Z",
+    "user_access": {
+      "role": "FIRST_ADMINISTRATOR",
+      "canDeleteSwimmingPool": true,
+      "canModifySwimmingPool": true,
+      "canCreateInviteToken": true
+    },
+    "data_validation": {
+      "measure_ranges": {
+        "ph": {
+          "min": 6.8,
+          "max": 8,
+          "delta": 0.1
+        },
+        "orp": {
+          "min": 600,
+          "max": 800,
+          "delta": 10
+        },
+        "temperature": {
+          "min": 10,
+          "max": 45,
+          "delta": 1
+        },
+        "salinity": {
+          "min": 0,
+          "max": 15,
+          "delta": 0.5
+        }
+      },
+      "automation_targets": {
+        "ph": {
+          "min": 6.8,
+          "max": 8,
+          "delta": 0.1
+        },
+        "orp": {
+          "min": 600,
+          "max": 800,
+          "delta": 10
+        },
+        "temperature": {
+          "min": 10,
+          "max": 45,
+          "delta": 1
+        },
+        "salinity": {
+          "min": 0,
+          "max": 15,
+          "delta": 0.5
+        }
+      }
+    },
+    "data_default": {
+      "measure_ranges": {
+        "ph": {
+          "custom_applied": false,
+          "min": 7.2,
+          "max": 7.6,
+          "ideal": 7.3
+        },
+        "orp": {
+          "custom_applied": false,
+          "min": 650,
+          "max": 750,
+          "ideal": 700
+        },
+        "conductivity": {
+          "custom_applied": false,
+          "min": 300,
+          "max": 10000,
+          "ideal": 1500
+        },
+        "salinity": {
+          "custom_applied": false,
+          "min": 4,
+          "max": 6,
+          "ideal": 5
+        },
+        "temperature": {
+          "custom_applied": false,
+          "min": 20,
+          "max": 40,
+          "ideal": 27
+        }
+      },
+      "automation_targets": {
+        "ph": {
+          "custom_applied": false,
+          "target": 7.3,
+          "repeat_too_high": false,
+          "repeat_too_low": false
+        },
+        "orp": {
+          "custom_applied": false,
+          "target": 700,
+          "repeat_too_high": false,
+          "repeat_too_low": false
+        },
+        "temperature": {
+          "custom_applied": false,
+          "target": 27,
+          "repeat_too_high": false,
+          "repeat_too_low": false
+        }
+      }
+    }
+  }

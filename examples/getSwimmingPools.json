@@ -1,0 +1,111 @@
+{
+    "data": [
+      {
+        "created": "2021-04-07T05:39:34.255Z",
+        "user_id": "",
+        "swimming_pool": {
+          "chemistry": {
+            "activeChemicalPackId": "riiot_generic",
+            "availableChemicalPacks": [],
+            "canSelectChemicalPack": false
+          },
+          "last_refresh_status": "2021-06-07T00:50:30.737Z",
+          "characteristics": {
+            "volume": {
+              "length": 4.82,
+              "width": 2.67,
+              "depth": 1.35,
+              "capacity": 17.373690000000003
+            },
+            "configuration": {
+              "_type": "Buried",
+              "construction_year": "",
+              "location": "Outdoor",
+              "waterproofing": "Coating_Mosaic",
+              "kind": "SwimmingPool"
+            },
+            "sanitizer": {
+              "chemical": "Chlorine",
+              "process": "Manuel"
+            },
+            "geoloc": {
+              "country_code": "SE",
+              "country": "Sweden",
+              "city": "",
+              "administrative_area_level_1": {
+                "long_name": "",
+                "short_name": ""
+              },
+              "lon": 0,
+              "lat": 0,
+              "zip_code": ""
+            },
+            "equipment": {
+              "heatings": [
+                "Heat Pump"
+              ],
+              "protections": [
+                "BubbleBlanket"
+              ],
+              "cleanings": [
+                "Electric"
+              ],
+              "filtrations": [
+                "Sand"
+              ]
+            },
+            "ph_regulation": {
+              "process": "Manual"
+            },
+            "filter_pump": {
+              "is_present": true,
+              "operating_type": "Manual",
+              "timezone": "Europe/Stockholm",
+              "operating_hours": []
+            }
+          },
+          "strip_brand_id": "generic_strips",
+          "created": "2021-04-07T05:39:34.255Z",
+          "name": "Poolen",
+          "custom_settings": {
+            "measure_ranges": {
+              "temperature": {
+                "min": 20,
+                "ideal": 27,
+                "max": 40,
+                "custom_applied": false
+              },
+              "ph": {
+                "min": 7.2,
+                "ideal": 7.3,
+                "max": 7.6,
+                "custom_applied": true
+              },
+              "orp": {
+                "min": 650,
+                "ideal": 700,
+                "max": 750,
+                "custom_applied": true
+              }
+            }
+          },
+          "swimming_pool_id": "",
+          "updated": "2021-06-05T10:25:10.495Z",
+          "sigfox_global_coverage": {
+            "robustness": 0,
+            "score": 0,
+            "margins": [
+              -1,
+              -1,
+              -1
+            ],
+            "redundancy": 0,
+            "level": 0
+          }
+        },
+        "role": "FIRST_ADMINISTRATOR",
+        "name": "Poolen",
+        "swimming_pool_id": ""
+      }
+    ]
+  }

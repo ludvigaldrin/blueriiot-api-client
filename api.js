@@ -37,7 +37,6 @@ class BlueriiotAPI {
             email: this.email,
             password: this.password
         };
-
         //login
         try {
             var result = await apigClient.invokeApi(pathParams, pathTemplate, method, additionalParams, body);
@@ -54,32 +53,7 @@ class BlueriiotAPI {
         }
     }
 
-    isAuthenticated = () => {
-        if (this.token === '') {
-            return false;
-        } else {
-            return true;
-        }
-    }
-
-    getUser = async () => {
-        if (this.isAuthenticated()) {
-            var pathParams = {};
-            var pathTemplate = 'user/'
-            try {
-                var userData = await this.getData(pathParams, pathTemplate);
-                //console.log(userData);
-                return userData;
-            } catch (err) {
-                throw new Error(err);
-                //console.error("Error, Can't get userdata");
-            }
-        } else {
-            throw new Error("You need to init api first!");
-        }
-    }
-
-    getData = async(pathParams, pathTemplate) => {
+    getData = async(pathParams, pathTemplate, queryParams) => {
         var cred = this.token.credentials;
         // Check if expired and refresh if needed
 
@@ -94,6 +68,7 @@ class BlueriiotAPI {
         const method = 'GET';
         const additionalParams = {
             headers: BASE_HEADERS,
+            queryParams: queryParams
         };
         const body = {
         };
@@ -101,7 +76,8 @@ class BlueriiotAPI {
         var result = '';
         try {
             var response = await apigClient.invokeApi(pathParams, pathTemplate, method, additionalParams, body);
-            var result = await JSON.stringify(response.data);
+            var data = response.data;
+            var result = await JSON.stringify(data);
         } catch (result) {
             //console.log(result);
             throw new Error(result);
@@ -110,9 +86,183 @@ class BlueriiotAPI {
         return result;
     }
 
+    isAuthenticated = () => {
+        if (this.token === '') {
+            return false;
+        } else {
+            return true;
+        }
+    }
 
+    getUser = async () => {
+        if (this.isAuthenticated()) {
+            var pathParams = {};
+            var pathTemplate = 'user/'
+            try {
+                var data = await this.getData(pathParams, pathTemplate,'');
+                //console.log(userData);
+                return data;
+            } catch (err) {
+                throw new Error(err);
+                //console.error("Error, Can't get userdata");
+            }
+        } else {
+            throw new Error("You need to init api first!");
+        }
+    }
 
+    getBlueDevice = async (blue_device_serial) => {
+        if (this.isAuthenticated()) {
+            var pathParams = {
+                device_serial: blue_device_serial
+            };
+            var pathTemplate = 'blue/{blue_device_serial}/'
+            try {
+                var data = await this.getData(pathParams, pathTemplate,'');
+                //console.log(userData);
+                return data;
+            } catch (err) {
+                throw new Error(err);
+                //console.error("Error, Can't get userdata");
+            }
+        } else {
+            throw new Error("You need to init api first!");
+        }
+    }
+
+    getSwimmingPools = async () => {
+        if (this.isAuthenticated()) {
+            var pathParams = {};
+            var pathTemplate = 'swimming_pool/'
+            try {
+                var data = await this.getData(pathParams, pathTemplate, '');
+                //console.log(userData);
+                return data;
+            } catch (err) {
+                throw new Error(err);
+                //console.error("Error, Can't get userdata");
+            }
+        } else {
+            throw new Error("You need to init api first!");
+        }
+    }
+
+    getSwimmingPool = async (swimming_pool_id) => {
+        if (this.isAuthenticated()) {
+            var pathParams = {
+                swimming_pool_id: swimming_pool_id
+            };
+            var pathTemplate = 'swimming_pool/{swimming_pool_id}/'
+            try {
+                var data = await this.getData(pathParams, pathTemplate, '');
+                //console.log(userData);
+                return data;
+            } catch (err) {
+                throw new Error(err);
+                //console.error("Error, Can't get userdata");
+            }
+        } else {
+            throw new Error("You need to init api first!");
+        }
+    }
+
+    getSwimmingPoolStatus = async (swimming_pool_id) => {
+        if (this.isAuthenticated()) {
+            var pathParams = {
+                swimming_pool_id: swimming_pool_id
+            };
+            var pathTemplate = 'swimming_pool/{swimming_pool_id}/status/'
+            try {
+                var data = await this.getData(pathParams, pathTemplate, '');
+                //console.log(userData);
+                return data;
+            } catch (err) {
+                throw new Error(err);
+                //console.error("Error, Can't get userdata");
+            }
+        } else {
+            throw new Error("You need to init api first!");
+        }
+    }
+
+    getSwimmingPoolBlueDevices = async (swimming_pool_id) => {
+        if (this.isAuthenticated()) {
+            var pathParams = {
+                swimming_pool_id: swimming_pool_id
+            };
+            var pathTemplate = 'swimming_pool/{swimming_pool_id}/blue/'
+            try {
+                var data = await this.getData(pathParams, pathTemplate, '');
+                //console.log(userData);
+                return data;
+            } catch (err) {
+                throw new Error(err);
+                //console.error("Error, Can't get userdata");
+            }
+        } else {
+            throw new Error("You need to init api first!");
+        }
+    }
+
+    getSwimmingPoolFeed = async (swimming_pool_id, language) => {
+        if (this.isAuthenticated()) {
+            var pathParams = {
+                swimming_pool_id: swimming_pool_id
+            };
+            var queryParams = {
+                language: language
+            }
+            var pathTemplate = 'swimming_pool/{swimming_pool_id}/feed'
+            try {
+                var data = await this.getData(pathParams, pathTemplate, queryParams);
+                //console.log(userData);
+                return data;
+            } catch (err) {
+                throw new Error(err);
+                //console.error("Error, Can't get userdata");
+            }
+        } else {
+            throw new Error("You need to init api first!");
+        }
+    }
+
+    getLastMeasurements = async (swimming_pool_id, blue_device_serial) => {
+        if (this.isAuthenticated()) {
+            var pathParams = {
+                swimming_pool_id: swimming_pool_id,
+                blue_device_serial: blue_device_serial
+            };
+            var queryParams = {
+                mode: 'blue_and_strip'
+            }
+            var pathTemplate = 'swimming_pool/{swimming_pool_id}/blue/{blue_device_serial}/lastMeasurements'
+            try {
+                var data = await this.getData(pathParams, pathTemplate, queryParams);
+                //console.log(userData);
+                return data;
+            } catch (err) {
+                throw new Error(err);
+                //console.error("Error, Can't get userdata");
+            }
+        } else {
+            throw new Error("You need to init api first!");
+        }
+    }
 
 }
 
 module.exports = { BlueriiotAPI };
+
+/**
+EndPoints 
+
+get_user user/
+get_blue_device blue/{blue_device_serial}/
+get_swimming_pools swimming_pool/
+get_swimming_pool swimming_pool/{swimming_pool_id}/
+get_swimming_pool_status swimming_pool/{swimming_pool_id}/status/
+get_swimming_pool_blue_devices swimming_pool/{swimming_pool_id}/blue/
+get_swimming_pool_feed swimming_pool/{swimming_pool_id}/feed?lang={language}
+get_last_measurements swimming_pool/{swimming_pool_id}/blue/{blue_device_serial}/lastMeasurements?mode=blue_and_strip
+
+ */

@@ -1,0 +1,41 @@
+{
+    "userInfo": {
+      "userIdentityId": "",
+      "userId": "",
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "accepted_last_eula": true,
+      "account_type": "Email"
+    },
+    "userPreferences": {
+      "notifications": {
+        "user_id": "",
+        "alerts_mail_enabled": false,
+        "alerts_push_enabled": true,
+        "measurement_mail_enabled": false,
+        "measurement_frequency": "every_day",
+        "measurement_push_enabled": true,
+        "measurement_hour": 10
+      },
+      "main_swimming_pool_id": ""
+    },
+    "currentEula": {
+      "url": "https://s3-eu-west-1.amazonaws.com/riiotlabsassets/eula/1.0/{lang}.html",
+      "version": "1.0",
+      "available_languages": [
+        "fr",
+        "es",
+        "en",
+        "nl",
+        "de",
+        "it",
+        "pt",
+        "cs"
+      ]
+    },
+    "userModuleAccess": {
+      "va_config": true,
+      "autom_targets_config": true
+    }
+  }
