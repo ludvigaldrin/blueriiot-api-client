@@ -1,0 +1,14 @@
+{
+  "name": "blueriiot-api-client",
+  "version": "0.1.0",
+  "description": "An unonffical api wrapper for Blueriiot API",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ludvig Aldrin <ludvig.aldrin@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "aws-api-gateway-client": "^0.3.7"
+  }
+}
