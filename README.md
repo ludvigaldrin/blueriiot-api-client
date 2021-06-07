@@ -24,6 +24,7 @@ api.init().then(function(){
 ```
 
 ## End Points
+```javascript
 getUser()
 getBlueDevice(<blue_device_serial>)
 getSwimmingPools()
@@ -32,6 +33,7 @@ getSwimmingPoolStatus(<swimming_pool_id>)
 getSwimmingPoolBlueDevices(<swimming_pool_id>)
 getSwimmingPoolFeed(<swimming_pool_id>,<language>)
 getLastMeasurements(<swimming_pool_id>,<blue_device_serial>)
+```
 
 ## Test
 For test you can look in the test.js file. To use it either mod the code or add a .env file.
