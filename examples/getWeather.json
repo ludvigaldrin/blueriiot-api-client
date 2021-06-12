@@ -1,0 +1,23 @@
+{
+    "swimming_pool_id": "",
+    "data": {
+      "timestamp": "2021-06-12T16:32:16.000Z",
+      "temperature_current": 17,
+      "wind_speed_current": 10.92,
+      "wind_direction_current": 286,
+      "weather_current_icon_code": "01d",
+      "weather_current_description": "clear sky",
+      "weather_current_code": 800,
+      "uv_current": 0.8,
+      "temperature_min": 13,
+      "temperature_max": 17,
+      "weather_future_icon_code": "01d",
+      "weather_future_timestamp": "2021-06-12T20:00:00.000Z",
+      "weather_future_temp": 15,
+      "weather_future_timeframe_one_icon_code": "01d",
+      "weather_future_timeframe_one_timestamp": "2021-06-12T19:00:00.000Z",
+      "weather_future_timeframe_two_icon_code": "01d",
+      "weather_future_timeframe_two_timestamp": "2021-06-12T20:00:00.000Z"
+    },
+    "lang": "en"
+  }

@@ -13,11 +13,17 @@ api.init().then(function(){
     
     //api.getUser().then(function(data){console.log(data);});
     //api.getBlueDevice(process.env.BLUEID).then(function(data){console.log(data);});
+    //api.getSwimmingPools().then(function(data){console.log(data);});
     //api.getSwimmingPool(process.env.POOLID).then(function(data){console.log(data);});
     //api.getSwimmingPoolStatus(process.env.POOLID).then(function(data){console.log(data);});
     //api.getSwimmingPoolBlueDevices(process.env.POOLID).then(function(data){console.log(data);});
     //api.getSwimmingPoolFeed(process.env.POOLID, "en").then(function(data){console.log(data);});
-    //api.getLastMeasurements(process.env.POOLID, "process.env.BLUEID).then(function(data){console.log(data);});
+    //api.getLastMeasurements(process.env.POOLID,process.env.BLUEID).then(function(data){console.log(data);})
+    //api.getGuidance(process.env.POOLID, "en").then(function(data){console.log(data);});
+    //api.getGuidanceHistory(process.env.POOLID, "en").then(function(data){console.log(data);});
+    //api.getChemistry(process.env.POOLID).then(function(data){console.log(data);});
+    //api.getWeather(process.env.POOLID, "en").then(function(data){console.log(data);});
+    //api.getBlueDeviceCompatibility(process.env.BLUEID).then(function(data){console.log(data);});
 }).catch( function(error){
     console.log("We have issues signing in: " + error);
 });
@@ -33,6 +39,11 @@ getSwimmingPoolStatus(<swimming_pool_id>)
 getSwimmingPoolBlueDevices(<swimming_pool_id>)
 getSwimmingPoolFeed(<swimming_pool_id>,<language>)
 getLastMeasurements(<swimming_pool_id>,<blue_device_serial>)
+getGuidance(<swimming_pool_id>,<language>)
+getGuidanceHistory(<swimming_pool_id>,<language>)
+getChemistry(<swimming_pool_id>)
+getWeather(<swimming_pool_id>,<language>)
+etBlueDeviceCompatibility(<blue_device_serial>)
 ```
 
 ## Test

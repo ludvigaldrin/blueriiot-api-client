@@ -1,0 +1,33 @@
+{
+    "serial": "",
+    "sn": "",
+    "fw_version_psoc": "v2.2.3",
+    "hw_generation": 2,
+    "hw_product_type": "plus",
+    "hw_product_pack": "plus",
+    "hw_product_name": "Blue Connect",
+    "hw_sf_zone": "rc1",
+    "hw_sf_country": "SE",
+    "last_measure_ble": "2021-05-16T11:47:23.638Z",
+    "state": {
+      "sleep_state": "awake"
+    },
+    "contract_isBasic": false,
+    "contract_isGo": false,
+    "contract_isSwaUs": false,
+    "contract_isVpcEligible": true,
+    "contract_servicePlan": "plus",
+    "contract_isMarketPlaceEligible": false,
+    "location": {
+      "support": "fit50",
+      "location": "pipe"
+    },
+    "hw_has_screw": true,
+    "flash_settings_to_apply": {
+      "sigfox_enabled": 1,
+      "wake_period": 4320
+    },
+    "reseller_channel": "standard",
+    "battery_low": false,
+    "gateway_id": ""
+  }

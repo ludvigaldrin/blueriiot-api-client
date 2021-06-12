@@ -1,0 +1,37 @@
+{
+    "chemistry": {
+      "activeChemicalPackId": "riiot_generic",
+      "availableChemicalPacks": [
+        {
+          "id": "riiot_generic",
+          "default_language": "en",
+          "is_generic": true,
+          "display_name": "Standard chemicals",
+          "brand": "Standard chemicals",
+          "img_banner": "cp_banner_riiot_generic_01.png",
+          "description": "This pack delivers standard pool care advices without referring to a specific chemicals brand. Advised chemicals quantities are computed by using standard concentrations which may not match with your chemical products.",
+          "service_plan": "free",
+          "price": "0",
+          "currency": "",
+          "subscription_status": "subscribed_free",
+          "products": [],
+          "application": {
+            "strips": [
+              "riiot_strips"
+            ]
+          },
+          "translations": {
+            "packs": {
+              "riiot_generic": {
+                "display_name": "Standard chemicals",
+                "brand": "Standard chemicals",
+                "description": "This pack delivers standard pool care advices without referring to a specific chemicals brand. Advised chemicals quantities are computed by using standard concentrations which may not match with your chemical products."
+              }
+            },
+            "products": {}
+          }
+        }
+      ],
+      "canSelectChemicalPack": false
+    }
+  }

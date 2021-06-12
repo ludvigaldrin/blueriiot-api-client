@@ -1,0 +1,13 @@
+{
+    "guidance": {
+      "swp_global_status": "SP_OK",
+      "chemicalPackId": "riiot_generic",
+      "status": "NOTHING_TO_DO",
+      "water_temperature_status": "OK",
+      "swimming_pool_id": "",
+      "lang": "en"
+    },
+    "vpc_sharing": {
+      "sharing_status": "not_shared"
+    }
+  }

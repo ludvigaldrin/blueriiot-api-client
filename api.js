@@ -118,7 +118,7 @@ class BlueriiotAPI {
     getBlueDevice = async (blue_device_serial) => {
         if (this.isAuthenticated()) {
             var pathParams = {
-                device_serial: blue_device_serial
+                blue_device_serial: blue_device_serial
             };
             var pathTemplate = 'blue/{blue_device_serial}/'
             try {
@@ -253,6 +253,113 @@ class BlueriiotAPI {
         }
     }
 
+    getGuidance = async (swimming_pool_id, language) => {
+        if (this.isAuthenticated()) {
+            var pathParams = {
+                swimming_pool_id: swimming_pool_id
+            };
+            var queryParams = {
+                language: language,
+                mode: 'interactive_v03'
+            }
+            var pathTemplate = 'swimming_pool/{swimming_pool_id}/guidance'
+            try {
+                var data = await this.getData(pathParams, pathTemplate, queryParams);
+                //console.log(userData);
+                return data;
+            } catch (err) {
+                throw new Error(err);
+                //console.error("Error, Can't get userdata");
+            }
+        } else {
+            throw new Error("You need to init api first!");
+        }
+    }
+
+    getGuidanceHistory = async (swimming_pool_id, language) => {
+        if (this.isAuthenticated()) {
+            var pathParams = {
+                swimming_pool_id: swimming_pool_id
+            };
+            var queryParams = {
+                language: language
+            }
+            var pathTemplate = 'swimming_pool/{swimming_pool_id}/guidance/history'
+            try {
+                var data = await this.getData(pathParams, pathTemplate, queryParams);
+                //console.log(userData);
+                return data;
+            } catch (err) {
+                throw new Error(err);
+                //console.error("Error, Can't get userdata");
+            }
+        } else {
+            throw new Error("You need to init api first!");
+        }
+    }
+
+    getChemistry = async (swimming_pool_id) => {
+        if (this.isAuthenticated()) {
+            var pathParams = {
+                swimming_pool_id: swimming_pool_id
+            };
+            var queryParams = {
+            }
+            var pathTemplate = 'swimming_pool/{swimming_pool_id}/chemistry'
+            try {
+                var data = await this.getData(pathParams, pathTemplate, queryParams);
+                //console.log(userData);
+                return data;
+            } catch (err) {
+                throw new Error(err);
+                //console.error("Error, Can't get userdata");
+            }
+        } else {
+            throw new Error("You need to init api first!");
+        }
+    }
+
+    getWeather = async (swimming_pool_id, language) => {
+        if (this.isAuthenticated()) {
+            var pathParams = {
+                swimming_pool_id: swimming_pool_id
+            };
+            var queryParams = {
+                language: language
+            }
+            var pathTemplate = 'swimming_pool/{swimming_pool_id}/weather'
+            try {
+                var data = await this.getData(pathParams, pathTemplate, queryParams);
+                //console.log(userData);
+                return data;
+            } catch (err) {
+                throw new Error(err);
+                //console.error("Error, Can't get userdata");
+            }
+        } else {
+            throw new Error("You need to init api first!");
+        }
+    }
+
+    getBlueDeviceCompatibility = async (blue_device_serial) => {
+        if (this.isAuthenticated()) {
+            var pathParams = {
+                blue_device_serial: blue_device_serial
+            };
+            var pathTemplate = 'blue/{blue_device_serial}/compatibility'
+            try {
+                var data = await this.getData(pathParams, pathTemplate,'');
+                //console.log(userData);
+                return data;
+            } catch (err) {
+                throw new Error(err);
+                //console.error("Error, Can't get userdata");
+            }
+        } else {
+            throw new Error("You need to init api first!");
+        }
+    }
+
 }
 
 module.exports = { BlueriiotAPI };
@@ -269,4 +376,18 @@ get_swimming_pool_blue_devices swimming_pool/{swimming_pool_id}/blue/
 get_swimming_pool_feed swimming_pool/{swimming_pool_id}/feed?lang={language}
 get_last_measurements swimming_pool/{swimming_pool_id}/blue/{blue_device_serial}/lastMeasurements?mode=blue_and_strip
 
- */
+New 2021-06-12
+swimming_pool/{swimming_pool_id}/guidance?lang={language}&mode=interactive_v03
+swimming_pool/{swimming_pool_id}/guidance/history?lang={language}
+swimming_pool/{swimming_pool_id}/chemistry
+swimming_pool/{swimming_pool_id}/weather?lang={language}
+blue/{blue_device_serial}/compatibility
+
+ 
+Maybe Comming
+blue/{blue_device_serial}/releaseLastUnprocessedEvent
+swimming_pool?deleted=true/false
+swimming_pool/{swimming_pool_id}/status/{taskId}}
+swimming_pool/{swimming_pool_id}/weather/forecast?startDate={startDate}&lang={language}
+
+*/

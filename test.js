@@ -10,7 +10,13 @@ api.init().then(function(){
     //api.getSwimmingPoolStatus(process.env.POOLID).then(function(data){console.log(data);});
     //api.getSwimmingPoolBlueDevices(process.env.POOLID).then(function(data){console.log(data);});
     //api.getSwimmingPoolFeed(process.env.POOLID, "en").then(function(data){console.log(data);});
-    api.getLastMeasurements(process.env.POOLID,process.env.BLUEID).then(function(data){console.log(data);});
+    //api.getLastMeasurements(process.env.POOLID,process.env.BLUEID).then(function(data){console.log(data);})
+    //api.getGuidance(process.env.POOLID, "en").then(function(data){console.log(data);});
+    //api.getGuidanceHistory(process.env.POOLID, "en").then(function(data){console.log(data);});
+    //api.getChemistry(process.env.POOLID).then(function(data){console.log(data);});
+    //api.getWeather(process.env.POOLID, "en").then(function(data){console.log(data);});
+    //api.getBlueDeviceCompatibility(process.env.BLUEID).then(function(data){console.log(data);});
+    
 }).catch( function(error){
     console.log("We have issues signing in: " + error);
 });

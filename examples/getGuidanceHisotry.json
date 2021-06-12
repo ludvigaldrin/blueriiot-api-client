@@ -1,0 +1,35 @@
+{
+    "items": [
+      {
+        "task_identifier": "ORP_LOW",
+        "date": "2021-04-24T12:05:24.126Z",
+        "end_date": "2021-04-24T12:05:36.564Z",
+        "end_reason": "time_skipped_new_measure",
+        "value_before": 299,
+        "value_after": 299,
+        "task_description": "ORP is too low",
+        "task_action": "Add 84 g of chlorine"
+      },
+      {
+        "task_identifier": "PH_HIGH",
+        "date": "2021-04-19T19:19:34.532Z",
+        "end_date": "2021-04-19T20:08:47.512Z",
+        "end_reason": "time_elapsed_new_measure",
+        "value_before": 7.9,
+        "value_after": 7.5,
+        "task_description": "pH is too high",
+        "task_action": "Add 628 g of pH decreaser"
+      },
+      {
+        "task_identifier": "PH_HIGH",
+        "date": "2021-04-19T15:58:42.508Z",
+        "end_date": "2021-04-19T16:28:58.070Z",
+        "end_reason": "time_elapsed_new_measure",
+        "value_before": 8,
+        "value_after": 8,
+        "task_description": "pH is too high",
+        "task_action": "Add 753 g of pH decreaser"
+      }
+    ],
+    "swimming_pool_id": ""
+  }
