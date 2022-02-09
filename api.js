@@ -387,7 +387,7 @@ blue/{blue_device_serial}/compatibility
 Maybe Comming
 blue/{blue_device_serial}/releaseLastUnprocessedEvent
 swimming_pool?deleted=true/false
-swimming_pool/{swimming_pool_id}/status/{taskId}}
+swimming_pool/{swimming_pool_id}/status/{task_id}
 swimming_pool/{swimming_pool_id}/weather/forecast?startDate={startDate}&lang={language}
 
 */

@@ -16,7 +16,6 @@ api.init().then(function(){
     //api.getChemistry(process.env.POOLID).then(function(data){console.log(data);});
     //api.getWeather(process.env.POOLID, "en").then(function(data){console.log(data);});
     //api.getBlueDeviceCompatibility(process.env.BLUEID).then(function(data){console.log(data);});
-    
 }).catch( function(error){
     console.log("We have issues signing in: " + error);
 });
