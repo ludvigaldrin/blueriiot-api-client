@@ -214,7 +214,7 @@ class BlueriiotAPI {
                 swimming_pool_id: swimming_pool_id
             };
             var queryParams = {
-                language: language
+                lang: language
             }
             var pathTemplate = 'swimming_pool/{swimming_pool_id}/feed'
             try {
@@ -259,7 +259,7 @@ class BlueriiotAPI {
                 swimming_pool_id: swimming_pool_id
             };
             var queryParams = {
-                language: language,
+                lang: language,
                 mode: 'interactive_v03'
             }
             var pathTemplate = 'swimming_pool/{swimming_pool_id}/guidance'
@@ -282,7 +282,7 @@ class BlueriiotAPI {
                 swimming_pool_id: swimming_pool_id
             };
             var queryParams = {
-                language: language
+                lang: language
             }
             var pathTemplate = 'swimming_pool/{swimming_pool_id}/guidance/history'
             try {
@@ -325,7 +325,7 @@ class BlueriiotAPI {
                 swimming_pool_id: swimming_pool_id
             };
             var queryParams = {
-                language: language
+                lang: language
             }
             var pathTemplate = 'swimming_pool/{swimming_pool_id}/weather'
             try {
